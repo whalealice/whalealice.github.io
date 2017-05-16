@@ -987,7 +987,7 @@ pre .javascript .function {
 }
 @media (max-width: 767px) {
   .site-title {
-    font-size: 60px;
+    font-size: 30px;
   }
   .site-title:before,
   .site-title:after {
@@ -1714,7 +1714,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffdad1;
+  background: #91403b;
 }
 .links-of-blogroll {
   font-size: 13px;
