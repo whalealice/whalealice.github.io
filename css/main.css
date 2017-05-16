@@ -1714,7 +1714,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffe2ff;
+  background: #ffdad1;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2507,7 +2507,7 @@ a.search-result {
   margin-top: 5px;
 }
 .menu .menu-item {
-  display: block;
+/*display: block;*/
   margin: 0;
   list-style: none;
 }
