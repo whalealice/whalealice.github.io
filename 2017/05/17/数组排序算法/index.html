@@ -42,7 +42,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexTD" />
+  <meta name="keywords" content="JavaScript," />
 
 
 
@@ -60,15 +60,17 @@
 
 
 
-<meta name="description" content="Love life love code look at their own growth ......">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Crisitina&#39; Blog">
-<meta property="og:url" content="http://yoursite.com/index.html">
+<meta name="description" content="&amp;emsp;&amp;emsp;昨天晚上想了半天今天写点什么呢，思来想去决定写写面试经常会遇到的数组排序吧！数组排序方法我真的是复习一遍忘一遍￣へ￣。PS:附一个排序动画。">
+<meta name="keywords" content="JavaScript">
+<meta property="og:type" content="article">
+<meta property="og:title" content="数组排序算法">
+<meta property="og:url" content="http://yoursite.com/2017/05/17/数组排序算法/index.html">
 <meta property="og:site_name" content="Crisitina&#39; Blog">
-<meta property="og:description" content="Love life love code look at their own growth ......">
+<meta property="og:description" content="&amp;emsp;&amp;emsp;昨天晚上想了半天今天写点什么呢，思来想去决定写写面试经常会遇到的数组排序吧！数组排序方法我真的是复习一遍忘一遍￣へ￣。PS:附一个排序动画。">
+<meta property="og:updated_time" content="2017-05-18T05:54:39.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Crisitina&#39; Blog">
-<meta name="twitter:description" content="Love life love code look at their own growth ......">
+<meta name="twitter:title" content="数组排序算法">
+<meta name="twitter:description" content="&amp;emsp;&amp;emsp;昨天晚上想了半天今天写点什么呢，思来想去决定写写面试经常会遇到的数组排序吧！数组排序方法我真的是复习一遍忘一遍￣へ￣。PS:附一个排序动画。">
 
 
 
@@ -89,9 +91,9 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/"/>
+  <link rel="canonical" href="http://yoursite.com/2017/05/17/数组排序算法/"/>
 
-  <title> Crisitina' Blog </title>
+  <title> 数组排序算法 | Crisitina' Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-En">
@@ -118,9 +120,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-right 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-right page-post-detail ">
     <div class="headband"></div>
     
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader" style="background-image: url('/images/home_bg.jpg');">
@@ -202,6 +202,23 @@
 </nav>
 
  </div>
+      <div class="header-post"> 
+  <div class="post-header">
+      <div class="tags">
+      
+        <a href="/tags/JavaScript/" rel="tag" title="JavaScript">JavaScript</a>
+      
+      </div>
+      <h1>数组排序算法</h1>
+      <h2 class="subtitle"></h2>
+      <div class="post-time">
+        <span class="post-meta-item-text">Posted on </span>
+        <time itemprop="dateCreated" datetime="2017-05-17T15:37:51+08:00" content="2017-05-17" title="2017-05-17 15:37:51">
+          2017-05-17
+        </time>
+      </div>
+  </div>
+ </div>
     </header>
 
 
@@ -210,9 +227,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
   
@@ -232,10 +249,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/05/17/数组排序算法/" itemprop="url">
-                  数组排序算法
-                </a>
+                数组排序算法
               
             
           </h1>
@@ -304,155 +318,93 @@
       
 
       
-        
-          <p>&emsp;&emsp;昨天晚上想了半天今天写点什么呢，思来想去决定写写面试经常会遇到的数组排序吧！数组排序方法我真的是复习一遍忘一遍￣へ￣。PS:附一个<a href="https://github.com/whalealice/arr-sort/" title="Title" target="_blank" rel="external">排序动画</a>。</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/05/17/数组排序算法/" rel="contents">
-              Read more &raquo;
-            </a>
-          </div>
+        <p>&emsp;&emsp;昨天晚上想了半天今天写点什么呢，思来想去决定写写面试经常会遇到的数组排序吧！数组排序方法我真的是复习一遍忘一遍￣へ￣。PS:附一个<a href="https://github.com/whalealice/arr-sort/" title="Title" target="_blank" rel="external">排序动画</a>。</p>
+<a id="more"></a> 
+<h3 id="冒泡排序-BubbleSort"><a href="#冒泡排序-BubbleSort" class="headerlink" title="冒泡排序 /BubbleSort"></a>冒泡排序 /BubbleSort</h3><h4 id="原理："><a href="#原理：" class="headerlink" title="原理："></a>原理：</h4><blockquote>
+<p>比较相邻的元素。如果第一个比第二个大，就交换他们两个，直到按需求排列完成。</p>
+</blockquote>
+<h4 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> BubbleSort(array)&#123;</div><div class="line">    var len = array.length,temp;</div><div class="line">    <span class="keyword">for</span>(var i=0; i&lt;len; i++)&#123;</div><div class="line">        <span class="keyword">for</span>(var j=0; j&lt;len-1; j++)&#123;</div><div class="line">            <span class="keyword">if</span>( array[j]&gt;array[j+1] )&#123;</div><div class="line">                // 因为需要交换值，先把后一个值保存</div><div class="line">                temp = array[j+1];</div><div class="line">                array[j+1] = array[j];</div><div class="line">                array[j] = temp;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">return</span> array;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="快速排序-QuickSort"><a href="#快速排序-QuickSort" class="headerlink" title="快速排序 /QuickSort"></a>快速排序 /QuickSort</h3><h4 id="原理：-1"><a href="#原理：-1" class="headerlink" title="原理："></a>原理：</h4><blockquote>
+<p>比较相邻的元素。如果第一个比第二个大，就交换他们两个，直到按需求排列完成。</p>
+</blockquote>
+<h4 id="代码实现：-1"><a href="#代码实现：-1" class="headerlink" title="代码实现："></a>代码实现：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> QuickSort(array)&#123;</div><div class="line">    var len = array.length;</div><div class="line">    <span class="keyword">if</span>(len&lt;=1) <span class="built_in">return</span> arr;  //如果数组&lt;=1,则直接返回</div><div class="line">    var left = [];</div><div class="line">    var right = [];</div><div class="line">    var temp = array.shift();</div><div class="line">    <span class="keyword">while</span>(len)&#123;</div><div class="line">        <span class="keyword">if</span>(array[0]&lt;temp)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
         
       
     </div>
 
     <div>
       
+        
+
+      
     </div>
 
     <div>
+      
+        
+
       
     </div>
 
     <footer class="post-footer">
       
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/05/15/hello-world/" itemprop="url">
-                  Hello World
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">Posted on</span>
-            <time itemprop="dateCreated" datetime="2017-05-15T12:50:18+08:00" content="2017-05-15">
-              2017-05-15
-            </time>
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">In</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/JavaScript/" itemprop="url" rel="index">
-                    <span itemprop="name">JavaScript</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          <!--  -->
-
-          
-
-          
-          
-
+            <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
           
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          <h4 id="One-Piece"><a href="#One-Piece" class="headerlink" title="One Piece"></a>One Piece</h4><p>&emsp;&emsp;拖了一年才着手搭建起了自己的博客，拖延症啊d=====(￣▽￣*)b！从事前端刚刚1年，从最开始拿到项目的紧张，到现在遇到问题能积极应对。这一年我从工作中也学到了很多，也成长的了许多。<br>&emsp;&emsp;想记录下自己生活中的点滴，也见证自己在工作上的成长！作为我的第一篇文章当然要从程序员的最爱Hello Word开始！</p>
-          <div class="post-more-link text-center">
-            <a class="btn" href="/2017/05/15/hello-world/" rel="contents">
-              Read more &raquo;
-            </a>
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/05/15/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
           </div>
-        
-      
-    </div>
 
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
       
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
           
           </div>
@@ -479,8 +431,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.jpg"
@@ -581,6 +542,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#冒泡排序-BubbleSort"><span class="nav-number">1.</span> <span class="nav-text">冒泡排序 /BubbleSort</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原理："><span class="nav-number">1.1.</span> <span class="nav-text">原理：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现："><span class="nav-number">1.2.</span> <span class="nav-text">代码实现：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速排序-QuickSort"><span class="nav-number">2.</span> <span class="nav-text">快速排序 /QuickSort</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原理：-1"><span class="nav-number">2.1.</span> <span class="nav-text">原理：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现：-1"><span class="nav-number">2.2.</span> <span class="nav-text">代码实现：</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -685,6 +657,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
