@@ -42,7 +42,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="JavaScript," />
+  <meta name="keywords" content="JavaScript,Array," />
 
 
 
@@ -61,13 +61,13 @@
 
 
 <meta name="description" content="&amp;emsp;&amp;emsp;昨天晚上想了半天今天写点什么呢，思来想去决定写写面试经常会遇到的数组排序吧！数组排序方法我真的是复习一遍忘一遍￣へ￣。PS:附一个排序动画。">
-<meta name="keywords" content="JavaScript">
+<meta name="keywords" content="JavaScript,Array">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数组排序算法">
 <meta property="og:url" content="http://yoursite.com/2017/05/17/数组排序算法/index.html">
 <meta property="og:site_name" content="Crisitina&#39; Blog">
 <meta property="og:description" content="&amp;emsp;&amp;emsp;昨天晚上想了半天今天写点什么呢，思来想去决定写写面试经常会遇到的数组排序吧！数组排序方法我真的是复习一遍忘一遍￣へ￣。PS:附一个排序动画。">
-<meta property="og:updated_time" content="2017-05-18T05:54:39.000Z">
+<meta property="og:updated_time" content="2017-05-18T07:36:34.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数组排序算法">
 <meta name="twitter:description" content="&amp;emsp;&amp;emsp;昨天晚上想了半天今天写点什么呢，思来想去决定写写面试经常会遇到的数组排序吧！数组排序方法我真的是复习一遍忘一遍￣へ￣。PS:附一个排序动画。">
@@ -208,6 +208,8 @@
       
         <a href="/tags/JavaScript/" rel="tag" title="JavaScript">JavaScript</a>
       
+        <a href="/tags/Array/" rel="tag" title="Array">Array</a>
+      
       </div>
       <h1>数组排序算法</h1>
       <h2 class="subtitle"></h2>
@@ -282,18 +284,6 @@
 
                 
                 
-                  , 
-                
-
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/JavaScript/Array/" itemprop="url" rel="index">
-                    <span itemprop="name">Array</span>
-                  </a>
-                </span>
-
-                
-                
 
               
             </span>
@@ -323,11 +313,24 @@
 <h3 id="冒泡排序-BubbleSort"><a href="#冒泡排序-BubbleSort" class="headerlink" title="冒泡排序 /BubbleSort"></a>冒泡排序 /BubbleSort</h3><h4 id="原理："><a href="#原理：" class="headerlink" title="原理："></a>原理：</h4><blockquote>
 <p>比较相邻的元素。如果第一个比第二个大，就交换他们两个，直到按需求排列完成。</p>
 </blockquote>
-<h4 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> BubbleSort(array)&#123;</div><div class="line">    var len = array.length,temp;</div><div class="line">    <span class="keyword">for</span>(var i=0; i&lt;len; i++)&#123;</div><div class="line">        <span class="keyword">for</span>(var j=0; j&lt;len-1; j++)&#123;</div><div class="line">            <span class="keyword">if</span>( array[j]&gt;array[j+1] )&#123;</div><div class="line">                // 因为需要交换值，先把后一个值保存</div><div class="line">                temp = array[j+1];</div><div class="line">                array[j+1] = array[j];</div><div class="line">                array[j] = temp;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">return</span> array;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="代码实现："><a href="#代码实现：" class="headerlink" title="代码实现："></a>代码实现：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> BubbleSort( array )&#123;</div><div class="line">    var len = array.length,temp;</div><div class="line">    <span class="keyword">for</span>( var i=0; i&lt;len; i++ )&#123;</div><div class="line">        <span class="keyword">for</span>( var j=0; j&lt;len-1; j++ )&#123;</div><div class="line">            <span class="keyword">if</span>( array[j] &gt; array[j+1] )&#123;</div><div class="line">                // 因为需要交换值，先把后一个值保存</div><div class="line">                temp = array[j+1];</div><div class="line">                array[j+1] = array[j];</div><div class="line">                array[j] = temp;</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">return</span> array;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
 <h3 id="快速排序-QuickSort"><a href="#快速排序-QuickSort" class="headerlink" title="快速排序 /QuickSort"></a>快速排序 /QuickSort</h3><h4 id="原理：-1"><a href="#原理：-1" class="headerlink" title="原理："></a>原理：</h4><blockquote>
-<p>比较相邻的元素。如果第一个比第二个大，就交换他们两个，直到按需求排列完成。</p>
+<p>先找到一个基准点，用基准点和数组数值进行比较，小于基准点的放在左边的数组，反之放入右边的数组。对左右两个数组依次进行递归比较。</p>
 </blockquote>
-<h4 id="代码实现：-1"><a href="#代码实现：-1" class="headerlink" title="代码实现："></a>代码实现：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> QuickSort(array)&#123;</div><div class="line">    var len = array.length;</div><div class="line">    <span class="keyword">if</span>(len&lt;=1) <span class="built_in">return</span> arr;  //如果数组&lt;=1,则直接返回</div><div class="line">    var left = [];</div><div class="line">    var right = [];</div><div class="line">    var temp = array.shift();</div><div class="line">    <span class="keyword">while</span>(len)&#123;</div><div class="line">        <span class="keyword">if</span>(array[0]&lt;temp)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h4 id="代码实现：-1"><a href="#代码实现：-1" class="headerlink" title="代码实现："></a>代码实现：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> QuickSort( array )&#123;</div><div class="line">    var len = array.length;</div><div class="line">    <span class="keyword">if</span>( len&lt;=1 ) <span class="built_in">return</span> arr;  //如果数组&lt;=1,则直接返回</div><div class="line">    var left = [];</div><div class="line">    var right = [];</div><div class="line">    var temp = array.shift(); //取基准点  </div><div class="line">    <span class="keyword">while</span>( len )&#123;</div><div class="line">        <span class="keyword">if</span>( array[0] &lt; temp )&#123;</div><div class="line">            left.push(array.shift());</div><div class="line">        &#125;<span class="keyword">else</span>&#123;</div><div class="line">            right.push(array.shift());</div><div class="line">        &#125;</div><div class="line">    &#125;</div><div class="line">    //递归执行以上操作,对左右两个数组进行操作，直到数组长度为&lt;=1；  </div><div class="line">    <span class="built_in">return</span> QuickSort(left).concat(temp,QuickSort(right))</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="选择排序-SelectSort"><a href="#选择排序-SelectSort" class="headerlink" title="选择排序 /SelectSort"></a>选择排序 /SelectSort</h3><h4 id="原理：-2"><a href="#原理：-2" class="headerlink" title="原理："></a>原理：</h4><blockquote>
+<p>每一次从待排序的数据元素中选出最小（或最大）的一个元素，存放在序列的起始位置，直到全部待排序的数据元素排完。</p>
+</blockquote>
+<h4 id="代码实现：-2"><a href="#代码实现：-2" class="headerlink" title="代码实现："></a>代码实现：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> SelectSort(array)&#123;</div><div class="line">    var len = array.length;</div><div class="line">    var temp,minIndex;</div><div class="line">    <span class="keyword">for</span>( var i=0; i&lt;len-1; i++ )&#123;</div><div class="line">        minIndex = i;</div><div class="line">        <span class="keyword">for</span>( var j=i+1; j&lt;len; j++ )&#123;</div><div class="line">            //寻找最小的数</div><div class="line">            <span class="keyword">if</span>( array[j] &lt; array[minIndex] )&#123;</div><div class="line">                minIndex = j; //将最小数的索引保存</div><div class="line">            &#125;</div><div class="line">        &#125;</div><div class="line">        temp = array[i];</div><div class="line">        array[i] = array[minIndex];</div><div class="line">        array[minIndex] = temp;</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">return</span> array;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="插入排序-InserSort"><a href="#插入排序-InserSort" class="headerlink" title="插入排序 /InserSort"></a>插入排序 /InserSort</h3><h4 id="原理：-3"><a href="#原理：-3" class="headerlink" title="原理："></a>原理：</h4><blockquote>
+<p>将无序数列中的元素插入到有序数列的对应位置，插入前通过比大小的方式找到其在有序数列中的对应位置。</p>
+</blockquote>
+<h4 id="代码实现：-3"><a href="#代码实现：-3" class="headerlink" title="代码实现："></a>代码实现：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> InsertSort(array)&#123;</div><div class="line">    var len = array.length;</div><div class="line">    <span class="keyword">for</span>( var i=1; i&lt;len; i++ )&#123; //i代表已经排序好的序列最后一项下标</div><div class="line">        var temp = array[i];</div><div class="line">        var j = i-1; //记录要被插入的下标</div><div class="line">        <span class="keyword">while</span>( j&gt;=0 &amp;&amp; array[j]&gt;key )&#123;</div><div class="line">            array[j+1] = array[j];</div><div class="line">            j--;</div><div class="line">        &#125;</div><div class="line">        array[j+1] = temp</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">return</span> array;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="希尔排序-ShellSort"><a href="#希尔排序-ShellSort" class="headerlink" title="希尔排序 /ShellSort"></a>希尔排序 /ShellSort</h3><h4 id="原理：-4"><a href="#原理：-4" class="headerlink" title="原理："></a>原理：</h4><blockquote>
+<p>先将整个待排元素序列分割成若干个子序列（由相隔某个“增量”的元素组成的）分别进行直接插入排序，然后依次缩减增量再进行排序，待整个序列中的元素基本有序（增量足够小）时，再对全体元素进行一次直接插入排序。</p>
+</blockquote>
+<h4 id="代码实现：-4"><a href="#代码实现：-4" class="headerlink" title="代码实现："></a>代码实现：</h4><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">function</span> ShellSort(array)&#123;</div><div class="line">    var len = array.length;</div><div class="line">    var gap = Math.floor(len/2);</div><div class="line">    <span class="keyword">while</span>( gap!==0 )&#123;</div><div class="line">        <span class="keyword">for</span>( var i=gap; i&lt;len; i++ )&#123; </div><div class="line">            var temp = array[i];</div><div class="line">            var j;</div><div class="line">            <span class="keyword">for</span>( j=i-gap; j&gt;=0 &amp;&amp; temp&lt;array[j]; j-=gap; )&#123;</div><div class="line">                array[j+gap] = array[j]</div><div class="line">            &#125;</div><div class="line">            array[j+gap] = temp</div><div class="line">        &#125;</div><div class="line">        gap = Math.floor(gap/2)</div><div class="line">    &#125;</div><div class="line">    <span class="built_in">return</span> array;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+
         
       
     </div>
@@ -351,6 +354,8 @@
         <div class="post-tags">
           
             <a href="/tags/JavaScript/" rel="tag">#JavaScript</a>
+          
+            <a href="/tags/Array/" rel="tag">#Array</a>
           
         </div>
       
@@ -469,7 +474,7 @@
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
@@ -549,7 +554,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#冒泡排序-BubbleSort"><span class="nav-number">1.</span> <span class="nav-text">冒泡排序 /BubbleSort</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原理："><span class="nav-number">1.1.</span> <span class="nav-text">原理：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现："><span class="nav-number">1.2.</span> <span class="nav-text">代码实现：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速排序-QuickSort"><span class="nav-number">2.</span> <span class="nav-text">快速排序 /QuickSort</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原理：-1"><span class="nav-number">2.1.</span> <span class="nav-text">原理：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现：-1"><span class="nav-number">2.2.</span> <span class="nav-text">代码实现：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#冒泡排序-BubbleSort"><span class="nav-number">1.</span> <span class="nav-text">冒泡排序 /BubbleSort</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原理："><span class="nav-number">1.1.</span> <span class="nav-text">原理：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现："><span class="nav-number">1.2.</span> <span class="nav-text">代码实现：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#快速排序-QuickSort"><span class="nav-number">2.</span> <span class="nav-text">快速排序 /QuickSort</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原理：-1"><span class="nav-number">2.1.</span> <span class="nav-text">原理：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现：-1"><span class="nav-number">2.2.</span> <span class="nav-text">代码实现：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#选择排序-SelectSort"><span class="nav-number">3.</span> <span class="nav-text">选择排序 /SelectSort</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原理：-2"><span class="nav-number">3.1.</span> <span class="nav-text">原理：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现：-2"><span class="nav-number">3.2.</span> <span class="nav-text">代码实现：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#插入排序-InserSort"><span class="nav-number">4.</span> <span class="nav-text">插入排序 /InserSort</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原理：-3"><span class="nav-number">4.1.</span> <span class="nav-text">原理：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现：-3"><span class="nav-number">4.2.</span> <span class="nav-text">代码实现：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#希尔排序-ShellSort"><span class="nav-number">5.</span> <span class="nav-text">希尔排序 /ShellSort</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#原理：-4"><span class="nav-number">5.1.</span> <span class="nav-text">原理：</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码实现：-4"><span class="nav-number">5.2.</span> <span class="nav-text">代码实现：</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
