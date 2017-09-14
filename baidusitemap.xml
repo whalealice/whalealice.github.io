@@ -4,6 +4,48 @@
 
     
   <url>
+    <loc>http://crisitina.top/2017/09/11/mvvm/</loc>
+    <lastmod>2017-09-14T02:01:55.000Z</lastmod>
+    <data>
+        <display>
+        <title>MVVM -- 双向绑定</title>
+        <pubTime>2017-09-11T03:03:36.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://crisitina.top/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://crisitina.top/2017/05/17/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2017-09-11T03:10:21.000Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript数组排序算法</title>
+        <pubTime>2017-05-17T07:37:51.000Z</pubTime>
+        
+        <tag>JavaScript</tag>
+         
+        <tag>Array</tag>
+         
+         
+           
+             
+              <breadCrumb title="JavaScript" url="http://crisitina.top/categories/JavaScript/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://crisitina.top/2017/05/23/AJAX/</loc>
     <lastmod>2017-05-26T06:37:36.000Z</lastmod>
     <data>
@@ -39,28 +81,6 @@
            
              
               <breadCrumb title="工具" url="http://crisitina.top/categories/%E5%B7%A5%E5%85%B7/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://crisitina.top/2017/05/17/%E6%95%B0%E7%BB%84%E6%8E%92%E5%BA%8F%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2017-05-26T05:48:14.000Z</lastmod>
-    <data>
-        <display>
-        <title>JavaScript数组排序算法</title>
-        <pubTime>2017-05-17T07:37:51.000Z</pubTime>
-        
-        <tag>JavaScript</tag>
-         
-        <tag>Array</tag>
-         
-         
-           
-             
-              <breadCrumb title="JavaScript" url="http://crisitina.top/categories/JavaScript/"/>
           
         </display>
     </data>
